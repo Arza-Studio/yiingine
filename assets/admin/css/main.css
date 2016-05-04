@@ -1,0 +1,393 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+ 
+html,
+body,
+#wrapper
+{
+    height: 100%;
+    font-family: "FontRegular", Helvetica, Arial, sans-serif;
+}
+    /* Header */
+    #header
+    {
+        padding: 8px;
+        border-bottom: none;
+        margin: 0;
+        text-align: center;
+    }
+    @media (min-width: 992px)
+    {
+        #header
+        {
+            height: 54px;
+        }
+    }
+    @media (min-width: 1200px)
+    {
+        #header
+        {
+            height: 58px;
+        }
+    }
+    #actionTitle
+    {
+        display: inline-block;
+        height: 100%;
+        font-size: 16px;
+    }
+    @media (min-width: 992px)
+    {
+        #actionTitle
+        {
+            font-size: 17px;
+        }
+    }
+    @media (min-width: 1200px)
+    {
+        #actionTitle
+        {
+            font-size: 18px;
+        }
+    }
+        #actionTitleIcon
+        {
+            padding: 4px;
+            margin-right: 3px;
+            display: inline-block;
+        }
+        @media (min-width: 992px)
+        {
+            #actionTitleIcon
+            {
+                padding: 5px;
+            }
+        }
+        @media (min-width: 1200px)
+        {
+            #actionTitleIcon
+            {
+                padding: 6px;
+            }
+        }
+        #actionTitleText
+        {
+            display: inline-block;
+        }
+    .navbar-toggle
+    {
+        margin: 0;
+    }
+        
+    /* Navigation */
+    #navigation
+    {
+        padding: 49px 0 0 0;
+    }
+    @media (min-width: 768px)
+    {
+        #navigation
+        {
+            padding: 50px 0 0 0;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: auto;
+        }
+    }
+    @media (min-width: 992px)
+    {
+        #navigation
+        {
+            padding-top: 54px;
+        }
+    }
+    @media (min-width: 1200px)
+    {
+        #navigation
+        {
+            padding-top: 58px;
+        }
+    }
+        .navbar-header.pull-right .form-group
+        {
+            margin: 0px 3px 8px 0;
+            float: left;
+        }
+        @media (min-width: 768px)
+        {
+            .navbar-header.pull-right .form-group
+            {
+                margin: 0px 0 8px 3px;
+            }
+        }
+        @media (min-width: 992px)
+        {
+            .navbar-header.pull-right .form-group
+            {
+                margin: 0px 0 10px 4px;
+            }
+        }
+        @media (min-width: 1200px)
+        {
+            .navbar-header.pull-right .form-group
+            {
+                margin: 0px 0 12px 5px;
+            }
+        }
+        /* Admin Menu */
+        #navigation .panel
+        {
+            margin: 0;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            border-radius: 0;
+            background-color: transparent;
+        }
+        #navigation .adminMenu
+        {
+            padding: 8px;
+        }
+            #navigation .list-group-item
+            {
+                background-image: none;
+                text-shadow: none;
+                position: relative;
+            }
+            @media (min-width: 768px)
+            {
+                #navigation .list-group-item.locked:before,
+                #navigation .list-group-item.locked:after
+                {
+                    content: '';
+                    width: 10px;
+                    height: 20px;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    margin-top:-10px;
+                    right: -10px;
+                }
+            }
+            #navigation .list-group-item:not(.depth0)
+            {
+                border-radius: 0;
+            }
+            #navigation .list-group-item:not(.depth0):first-child
+            {
+                border-top: none;
+            }
+            #navigation .list-group-item:not(.depth0):last-child
+            {
+                border-bottom: none;
+            }
+            #navigation .list-group-item.depth0
+            {
+                padding-left: 12px;
+                padding-top: 9px;
+                padding-bottom: 10px;
+            }
+            #navigation .list-group-item.depth1
+            {
+                padding-left: 22px;
+                padding-top: 6px;
+                padding-bottom: 8px;
+            }
+            #navigation .list-group-item.depth2
+            {
+                padding-left: 32px;
+                padding-top: 4px;
+                padding-bottom: 5px;
+            }
+                #navigation .list-group-item .fa-caret-down
+                {
+                    float: right;
+                    margin-top: 3px;
+                }
+            
+        /* Admin infos */
+        .adminInfos
+        {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 4px 8px 6px 8px;
+        }
+            .adminInfos .label
+            {
+                padding: 3px 4px;
+                border: 1px solid;
+                font-weight: normal;
+                display: inline-block;
+            }
+    
+    /* Content */
+    #contentWrapper
+    {
+        height: 100%;
+    }
+    @media (min-width: 778px)
+    {
+        #contentWrapper
+        {
+            padding-top: 50px;
+        }
+    }
+    @media (min-width: 992px)
+    {
+        #contentWrapper
+        {
+            padding-top: 54px;
+        }
+    }
+    @media (min-width: 1200px)
+    {
+        #contentWrapper
+        {
+            padding-top: 58px;
+        }
+    }
+        #content
+        {
+            height: 100%;
+            padding-top: 25px;
+            padding-bottom: 100px;
+            background-size: 20px 20px;
+            background-position: -10px -10px;
+        }
+        @media (min-width: 992px)
+        {
+            #content
+            {
+                padding-bottom: 104px;
+            }
+        }
+        @media (min-width: 1200px)
+        {
+            #content
+            {
+                padding-bottom: 108px;
+            }
+        }
+            #content .container-fluid
+            {
+                padding: 0;
+            }
+            @media (min-width: 778px)
+            {
+                #content section
+                {
+                    padding-right: 0;
+                }
+            }
+            @media (min-width: 992px)
+            {
+                #content .container-fluid
+                {
+                    padding: 0 15px;
+                }
+                    #content section
+                    {
+                        padding-right: 15px;
+                    }
+            }
+    
+    /* Actions */
+    #actions
+    {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+    }
+    @media (max-width: 768px)
+    {
+        #actions
+        {
+            width: 100%;
+        }
+    }
+        #actionsGradient
+        {
+            height: 50px;
+        }
+        #actions .container-fluid
+        {
+            height: 50px;
+            border-top: 1px solid;
+            padding: 8px 15px;
+        }
+        @media (min-width: 992px)
+        {
+            #actionsGradient,
+            #actions .container-fluid
+            {
+                height: 54px;
+            }
+        }
+        @media (min-width: 1200px)
+        {
+            #actionsGradient,
+            #actions .container-fluid
+            {
+                height: 58px;
+            }
+        }
+            #actions .row
+            {
+                height: 100%;
+            }
+        
+/* Button */
+.btn
+{
+    font-size: 14px;
+    padding: 5px 11px 7px 11px;
+    border-style: solid;
+    border-width: 1px;
+}
+@media (min-width: 992px)
+{
+    .btn
+    {
+        font-size: 14.5px;
+        padding: 7px 13px 8px 13px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .btn
+    {
+        font-size: 15px;
+        padding: 9px 14px 10px 14px;
+    }
+}
+
+/* Bootstrap style to disable */
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus
+{
+    outline: none !important;
+}
+a:visited
+{
+    text-decoration: none !important;
+}
+
+
+/* A FAIRE !!! */
+.infoBox
+{
+    display: none;
+}

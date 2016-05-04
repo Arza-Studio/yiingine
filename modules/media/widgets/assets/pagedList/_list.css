@@ -1,0 +1,72 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+
+/*
+List default structure :
+
+<section class="list">
+    <article class="thumbnail">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="image">
+                        <a ...><img .../></a>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <header>
+                        <h*>...</h*>
+                    </header>
+                    <div class="description">
+                        <p>...</p>
+                    </div>
+                    <footer>
+                        <a class="btn" ...></a>
+                        <button class="btn" ></a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </article>
+    ...
+</section>
+*/
+
+.list .thumbnail
+{
+    margin: 0 0 10px 0;
+}
+    .list .thumbnail .container-fluid
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+        .list .thumbnail .col-sm-4
+        {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .list .thumbnail .col-sm-8
+        {
+            padding-top: 8px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        @media (min-width: 768px)
+        {
+            .list .thumbnail .col-sm-8
+            {
+                padding-top: 0;
+                position: relative;
+                margin-left: 15px;
+            }
+                .list .thumbnail footer
+                {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                }
+        }

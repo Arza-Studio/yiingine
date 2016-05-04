@@ -1,0 +1,26 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+
+.searchBox input[type=text]
+{
+    border-color:         gray;
+}
+.searchBox input[type=text].initial
+{
+    color:                gray;
+    font-style:           italic;
+}
+.searchBox input[type=text]:focus
+{
+    border-color:         black;
+}
+
+.searchBox .errorMessage
+{
+    display:              inline-block;
+    color:                red;
+    margin-right:         5px;
+}

@@ -1,0 +1,39 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+
+/* Image */
+.backgroundImage,
+.backgroundImageOpacity:before
+{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+/* Image : opacity */
+.backgroundImageOpacity
+{
+    position: relative;
+}
+.backgroundImageOpacity:before
+{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* Color */
+.backgroundColor:before
+{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}

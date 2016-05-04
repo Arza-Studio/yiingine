@@ -1,0 +1,156 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+
+/*
+Thumbnail default structure :
+$layout = {image}{header}{description}{footer}
+
+<article class="thumbnail">
+    <div class="image">
+        <a ...><img .../></a>
+    </div>
+    <header>
+        <h*>...</h*>
+    </header>
+    <div class="description">
+        <p>...</p>
+    </div>
+    <footer>
+        <a class="btn" ...></a>
+        <button class="btn" ></a>
+    </footer>
+</article>
+*/
+
+.thumbnail
+{
+    margin: 0;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    clear: left;
+    height: auto;
+}
+aside .thumbnail
+{
+    margin-top: 15px;
+}
+
+    /* Image */
+    .thumbnail .image
+    {
+        margin-top: 10px;
+    }
+    .thumbnail .image:first-child
+    {
+        margin-top: 0;
+    }
+        .thumbnail .image a
+        {
+            display: block;
+        }
+       
+    /* Header */
+    .thumbnail header
+    {
+        margin-top: 10px;
+    }
+    .thumbnail header:first-child
+    {
+        margin-top: 0;
+    }
+    .thumbnail header + div:not(.description)
+    {
+        margin-top: 10px;
+    }
+        .thumbnail header *
+        {
+            font-family: "FontRegular", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+        }
+        @media (min-width: 992px)
+        {
+            .thumbnail header *
+            {
+                font-size: 16.5px;
+            }
+        }
+        @media (min-width: 1200px)
+        {
+            .thumbnail header *
+            {
+                font-size: 17px;
+            }
+        }
+            .thumbnail header * .fa
+            {
+                margin-right: 5px;
+            }
+    
+    /* Description and paragraphs */
+    .thumbnail .description
+    {
+        margin-top: 10px;
+    }
+    .thumbnail .description:first-child
+    {
+        margin-top: 0px;
+    }
+        .thumbnail .description *,
+        .thumbnail p
+        {
+            font-size: 13px;
+        }
+        .thumbnail p
+        {
+            margin-bottom: 5px;
+        }
+        .thumbnail p:last-child
+        {
+            margin-bottom: 10px;
+        }
+        @media (min-width: 992px)
+        {
+            .thumbnail .description *,
+            .thumbnail p
+            {
+                font-size: 13.5px;
+            } 
+        }
+        @media (min-width: 1200px)
+        {
+            .thumbnail .description *,
+            .thumbnail p
+            {
+                font-size: 14px;
+            } 
+        }
+    
+    /* Label */
+    .thumbnail .label
+    {
+        margin-right: 5px;
+    }
+    .thumbnail .label:last-of-type
+    {
+        margin-right: 0px;
+    }
+        
+    /* Footer */
+    .thumbnail footer
+    {
+        text-align: right;
+    }
+        .thumbnail footer .btn
+        {
+            margin-left: 5px;
+        }
+        .thumbnail footer div
+        {
+            display: inline-block;
+        }

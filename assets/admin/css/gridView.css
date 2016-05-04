@@ -1,0 +1,294 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+  
+.grid-view
+{
+}
+    /* Table */
+    .grid-view table
+    {
+        background-color: white;
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: auto;
+        display: inline-table;
+    }
+    .oneToManyGridView table
+    {
+        margin-top: 5px;
+    }
+        /* Header */
+        .grid-view th
+        {   
+            position: relative;
+            height: auto;
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            line-height: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: left;
+            text-transform: uppercase;
+            border: 1px solid black;
+            cursor: pointer;
+            background-color: gray;
+        }
+        .oneToManyGridView th
+        {
+            height: 25px;
+        }
+        .grid-view th.mixed
+        {
+            padding: 0;
+        }
+            .grid-view th.mixed th
+            {
+                border-top: 0;
+                border-bottom: 0;
+                border-left: 1px solid black;
+                border-right: 0;
+            }
+                .grid-view th.mixed th.first
+                {
+                    border-left: 0;
+                }
+        .grid-view th:hover
+        {  
+            color: white;
+            background-color: black;
+        }
+            .grid-view th .fa
+            {    
+                position: absolute;
+                right: 10px;
+            }
+            .grid-view th a
+            {   
+                color: inherit;
+                text-decoration: none;
+                text-align: left;
+                padding: 8px 10px;
+                min-height: 100%;
+                width: auto;
+                display: block;
+            }
+                .grid-view th a.asc,
+                .grid-view th a.desc
+                {
+                    color: white;
+                }
+        /* Filters */
+        .oneToManyGridView tr.filters
+        {
+            display: none;
+        }
+        .grid-view tr.filters td
+        {   
+            padding: 5px 5px 5px 5px;
+            height: auto;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            background-color: gray;
+            vertical-align: bottom;
+        }
+        .grid-view tr.filters td.mixed
+        {
+            padding: 0;
+        }
+            .grid-view tr.filters td.mixed td
+            {
+                border-top: 0;
+                border-bottom: 0;
+                border-left: 1px solid black;
+                border-right: 0;
+            }
+                .grid-view tr.filters td.mixed td.first
+                {
+                    border-left: 0;
+                }
+        .grid-view tr.filters td.asc,
+        .grid-view tr.filters td.desc
+        { 
+            background-color: #373737;
+        }
+            .grid-view tr.filters td input[type=text]
+            {       
+                margin: 0;
+                padding: 0;
+                height: 18px;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                line-height: 12px;
+                font-weight: normal;
+                text-decoration: none;
+                text-align: left;
+                border: 1px solid black;
+                background-color: white;
+            }
+            .grid-view tr.filters td input[type=text]:focus
+            {   
+                background-color: white;
+            }
+            .grid-view tr.filters td select
+            {
+                height: 18px;
+            }
+        /* Content */
+        .grid-view tr:nth-of-type(even)
+        {
+            background-color: gray;
+        }
+            .grid-view tr:nth-of-type(even) td.masked
+            {
+                color: gray;
+            }
+        .grid-view tr:nth-of-type(odd)
+        {
+            background-color: white;
+        }
+            .grid-view tr:nth-of-type(odd) td.masked
+            {
+                color: white;
+            }
+        .grid-view tr.selected
+        {
+            background-color: green;
+        }
+        .grid-view tr:hover
+        {
+            background-color: red;
+        }
+            .grid-view td
+            {   
+                padding: 0 10px 0 10px;
+                height: 25px;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                line-height: 15px;
+                font-weight: normal;
+                text-decoration: none;
+                text-align: left;
+
+                border-right: 1px solid white;
+            }
+                .grid-view td p
+                {   
+                    margin: 0;
+                }
+                .grid-view td a:not(.btnFa)
+                {   
+                    color: #595959;
+                }
+                .grid-view td a:not(.btnFa):hover
+                {   
+                    color: black;
+                }
+                .grid-view td a:not(.btnFa):active
+                {   
+                    color: green;
+                }
+        /* Button column */
+        .grid-view .buttonColumn
+        {
+            text-align: center;
+        }
+        /* Position column */
+        .grid-view td.positionColumn
+        {
+            text-align: right;
+            margin: 0;
+            padding: 2px 5px 0 0;
+        }
+            .grid-view .positionColumnValue
+            {
+                font-weight: bold;
+                display: inline-block;
+                margin: 6px 6px 2px 1px;
+                vertical-align: top;
+            }
+        /* Button fowtawesome */
+        .grid-view .btnFa
+        {
+            display: inline-block;
+            vertical-align: bottom;
+            margin: 0px 1px 2px 1px;
+            height: 21px; 
+            width: 21px;
+            background-repeat: no-repeat;
+            border: 1px solid;
+        }
+        /* Timestamp column */
+        .grid-view .timestampColumn
+        {
+            text-align: center;
+        }
+        .grid-view td.timestampColumn
+        {
+            font-size: 11px;
+            color: gray;
+            padding: 3px 0;
+        }
+        /* Enable column */
+        .grid-view td.enable
+        {
+            text-align: center;
+            padding: 3px 0;
+        }
+        .grid-view .pager
+        {
+            margin: 5px 0 10px 0;
+            text-align: right;
+        }
+        .grid-view .empty
+        {
+            font-style: italic;
+        }
+        .grid-view .filters input,
+        .grid-view .filters select
+        {
+            width: 100%;
+        }
+        /* Color box */
+        div.colorBox
+        {
+            display: inline-block;
+            width: 100%;
+            height: 21px;
+            border: 1px solid black;
+        }
+        /* Summary*/
+        .grid-view .summary
+        {
+            text-align: right;
+            margin: 0 0 0 0;
+            width: auto;
+            margin: 0 0 5px 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 20px;
+            height: 20px;
+        }
+        /* Page resizer */
+        .pageResizer
+        {
+            margin: 0;
+            width: 200px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 20px;
+            height: 20px;
+        }

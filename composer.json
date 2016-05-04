@@ -1,0 +1,45 @@
+{
+    "name": "arza-studio/yiingine",
+    "version": "2.0",
+    "description": "Yiingine framemork for Yii 2.0",
+    "keywords": ["yii2", "framework", "yiingine"],
+    "homepage": "http://www.arza-studio.com/",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Antoine Mercier-Linteau",
+            "email": "antoine.mercier-linteau@arza-studio.com",
+            "homepage": "http://www.arza-studio.com/",
+            "role": "Founder and back-end development"
+        },
+        {
+            "name": "Antoine Wolff",
+            "email": "antoine.wolff@arza-studio.com",
+            "homepage": "http://www.arza-studio.com/",
+            "role": "Founder and front-end development"
+        }
+    ],
+    "require": 
+    {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "2.0.*",
+        "yiisoft/yii2-imagine": "2.0.*",
+        "moonlandsoft/yii2-tinymce": "1.0.0",
+        "rmrevin/yii2-fontawesome": "dev-master",
+        "demogorgorn/yii2-superfish-menu": "dev-master",
+        "matthiasmullie/minify": "1.3.23",
+        "harrytang/yii2-fineuploader": "1.0.0",
+        "evgeniyrru/yii2-slick": "dev-master",
+        "keltstr/yii2-simplehtmldom": "dev-master",
+        "webulla/yii2-sharelinks": "dev-master",
+        "comdvas/yii2-jasny-bootstrap": "dev-master",
+        "roman444uk/yii2-magnific-popup": "dev-master",
+        "bower-asset/codemirror": "3.22.0",
+        "bower-asset/hammerjs": "2.0.*",
+        "bower-asset/jquery-hammerjs": "2.0.*"
+    },
+    "autoload": {
+        "psr-4": {"yiingine\\": ""}
+    }
+}

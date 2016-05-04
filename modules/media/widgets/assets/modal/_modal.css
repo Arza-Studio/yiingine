@@ -1,0 +1,113 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+
+/*
+Modal default structure :
+$layout = {header}{content}{footer}
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h* class="modal-title">...</h*>
+            </div>
+            <div class="modal-body container-fluid">
+               <div class="content">...</div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn" ...></a>
+                <button class="btn" ></a> 
+            </div>
+        </div>
+    </div>
+</div>
+*/
+
+/* Grid */
+.modal .col-sm-8
+{
+    padding-left: 0;
+}
+
+/* Header */
+.modal-header *
+{
+    font-family: "FontRegular", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    margin: 0;
+}
+@media (min-width: 992px)
+{
+    .modal-header *
+    {
+        font-size: 21px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .modal-header *
+    {
+        font-size: 23px;
+    }
+}
+
+/* Content and paragraphs */
+.modal .content
+{
+    margin-top: 10px;
+}
+.modal .content:first-child
+{
+    margin-top: 0px;
+}
+    .modal .content *,
+    .modal p
+    {
+        font-size: 13px;
+    }
+    .modal p
+    {
+        margin-bottom: 5px;
+    }
+    .modal p:last-child
+    {
+        margin-bottom: 10px;
+    }
+    @media (min-width: 992px)
+    {
+        .modal .content *,
+        .modal p
+        {
+            font-size: 13.5px;
+        } 
+    }
+    @media (min-width: 1200px)
+    {
+        .modal .content *,
+        .modal p
+        {
+            font-size: 14px;
+        } 
+    }
+
+/* Labels */
+.modal .labels
+{
+    margin-top: 12px;
+}
+    .modal .label
+    {
+        margin-right: 5px;
+    }
+    
+/* Footer  */
+.modal-footer div
+{
+    display: inline-block;
+}
+.modal-footer .btn
+{
+    margin-left: 5px;
+}

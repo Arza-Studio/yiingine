@@ -1,0 +1,28 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+
+.vcard,
+.vcard ul
+{
+    padding: 0;
+    list-style: none;
+}
+.vcard li ul
+{
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px dotted;
+}
+.vcard li:first-of-type ul
+{
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+.tel .type
+{
+    display: none;
+}

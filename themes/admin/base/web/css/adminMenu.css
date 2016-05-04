@@ -1,0 +1,84 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+ 
+/* ul */
+.adminMenu,
+.adminMenu ul,
+.adminMenu ul ul,
+.adminMenu ul ul ul
+{   
+    position: absolute;
+    min-height: 32px;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0 0 3px 0;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.adminMenu
+{
+    top: 45px;
+}
+.adminMenu ul,
+.adminMenu li ul,
+.adminMenu li.locked li ul,
+.adminMenu li.locked li.locked li ul
+{
+    display: none;
+}
+.adminMenu,
+.adminMenu li.locked ul,
+.adminMenu li.locked ul.locked,
+.adminMenu li.locked li.locked ul,
+.adminMenu li.locked li.locked ul.locked,
+.adminMenu li.locked li.locked li.locked ul,
+.adminMenu li.locked li.locked li.locked ul.locked
+{   
+    display: block;
+}
+/* li */
+.adminMenu li,
+.adminMenu li li,
+.adminMenu li li li
+{
+    display: inline-block;
+    margin: 3px 3px 0 0;
+}
+.adminMenu li.last
+{
+    margin-right: 0;
+}
+/* a */
+.adminMenu li a
+{
+    display: inline-block;
+    padding: 0px 8px 0px 8px;
+    height: auto;
+    width: auto;
+    font-family: 'FontBold', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* arrow  (cf. adminHead inline css) */
+.adminMenu li .arrow
+{
+    position: absolute;
+    margin-top: 28px;
+    width: 20px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-image: url(../../images/adminMenuArrow.png);
+}
+/* advanced */
+.adminMenu li.advanced a
+{
+    background-image: url(../../images/adminMenuAdvanced.png);
+    background-position: center center;
+}

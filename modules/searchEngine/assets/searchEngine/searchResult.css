@@ -1,0 +1,26 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+
+.searchResultCorpus h1
+{
+    margin:               0px;
+}
+
+.searchResultCorpus p.totalItemCount
+{
+    margin-bottom:        20px;
+}
+
+body .searchResultCorpus p
+{
+    margin:               0px;
+}
+body .searchResultCorpus p.type
+{
+    text-transform:       uppercase;
+    font-size:            12px;
+}
+

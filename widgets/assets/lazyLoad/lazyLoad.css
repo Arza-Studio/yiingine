@@ -1,0 +1,27 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+
+.lazy-loader
+{
+    background-color: #eee;
+    position: relative;
+}
+    .lazy-loader svg
+    {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -25px;
+        margin-left: -25px;
+        width: 50px;
+        height: 50px;
+        stroke: gray;
+    }
+    .lazy-loading svg
+    {
+        display: block;
+    }
