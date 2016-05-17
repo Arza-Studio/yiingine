@@ -1,11 +1,11 @@
 {
     "name": "arza-studio/yiingine",
-    "version": "2.0",
+    "version": "2.0-alpha",
     "description": "Yiingine framemork for Yii 2.0",
-    "keywords": ["yii2", "framework", "yiingine"],
-    "homepage": "http://www.arza-studio.com/",
+    "keywords": ["yii2", "framework", "yiingine", "CMS", "Content Management System"],
+    "homepage": "https://github.com/Arza-Studio/yiingine",
     "type": "library",
-    "license": "proprietary",
+    "license": "BSD-3",
     "authors": [
         {
             "name": "Antoine Mercier-Linteau",
