@@ -7,6 +7,7 @@ The Yiingine is a highly customizable content management system built on the [Yi
 * fully functionnal administration interface using Yii 2.0's powerful GridView and a simple and intuitive layout;
 * numerous components can be harnessed to create any type of front-end;
 * core models can be customized at will to adapt them to the application's needs;
+* virtually every view file or controller can be overriden by the client site to provide extra functionnality;
 * fully internationalizable content (translations currently in English and French);
 * speedy execution thanks to built-in caching;
 * powerful user management with role based access control.
