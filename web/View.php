@@ -83,7 +83,7 @@ class View extends \yii\web\View
                 $theme = $this->$theme;
                 if(!isset($theme['class']))
                 {
-                    $theme['class'] = '\yiingine\components\Theme';
+                    $theme['class'] = '\yiingine\base\Theme';
                 }
                 $this->theme = Yii::createObject($theme);
             }

@@ -60,7 +60,7 @@ if($model instanceof \yii\db\ActiveRecord)
     {
         $columns[] = [
             'attribute' => 'enable',
-            'class' => '\yiingine\components\admin\BooleanColumn'
+            'class' => '\yiingine\grid\BooleanColumn'
         ];
     }
     

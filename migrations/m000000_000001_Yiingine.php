@@ -109,12 +109,17 @@ class m000000_000001_Yiingine extends \yiingine\console\DbMigration
 
         ####################### TEMP DIRECTORY #######################
 
-        // If the temp directory does not exist.
         if (!file_exists(Yii::getAlias('@webroot/user/temp'))) 
         {
-            mkdir(Yii::getAlias('@webroot/user/temp')); // Create it.
+            \yii\helpers\FileHelper::createDirectory(Yii::getAlias('@webroot/user/temp'));
+            \yii\helpers\FileHelper::createDirectory(Yii::getAlias('@webroot/user/temp/assets'));
         }
 
+        if (!file_exists(Yii::getAlias('@webroot/user/temp/assets')))
+        {
+            \yii\helpers\FileHelper::createDirectory(Yii::getAlias('@webroot/user/temp/assets'));
+        }
+        
         ####################### CONFIGURATION ENTRIES #######################
         
         echo "    > adding default configuration entries ...";

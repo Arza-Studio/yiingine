@@ -191,8 +191,15 @@ class MigrateController extends \yii\console\controllers\MigrateController
         {
             echo '    > clearing rbac files ...';
             $time = microtime(true);
-            Yii::$app->authManager->removeAll();
-            echo " done (time: ".sprintf('%.3f', microtime(true)-$time)."s)\n";
+            try
+            {
+                Yii::$app->authManager->removeAll();
+                echo " done (time: ".sprintf('%.3f', microtime(true)-$time)."s)\n";
+            }
+            catch(\yii\base\ErrorException $e)
+            {
+                echo " failed (time: ".sprintf('%.3f', microtime(true)-$time)."s)\n";
+            }
         }
         
         echo '    > clearing database ...';
@@ -206,19 +213,23 @@ class MigrateController extends \yii\console\controllers\MigrateController
         
         echo '    > clearing user files ...';
         $time = microtime(true);
-        $path = Yii::getAlias('@webroot/user').DIRECTORY_SEPARATOR;
         
-        $exclude = ['.', '..', '.svn'];
-        foreach(scandir($path) as $dir)
+        $exclude = ['.', '..', '.svn', '.git'];
+        
+        $path = Yii::getAlias('@webroot/user').DIRECTORY_SEPARATOR;
+        if(is_dir($path))
         {
-            if(in_array($dir, $exclude) || is_file($path.$dir))
+            foreach(scandir($path) as $dir)
             {
-                continue;
+                if(in_array($dir, $exclude) || is_file($path.$dir))
+                {
+                    continue;
+                }
+                
+                $this->_clearDirectory($path.$dir);
             }
-            
-            $this->_clearDirectory($path.$dir);
+            echo " done (time: ".sprintf('%.3f', microtime(true)-$time)."s)\n";
         }
-        echo " done (time: ".sprintf('%.3f', microtime(true)-$time)."s)\n";
         
         echo '    > removing module files ...';
         $time = microtime(true);

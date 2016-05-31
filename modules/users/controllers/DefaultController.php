@@ -37,7 +37,7 @@ class DefaultController extends \yiingine\web\SiteController
             $url .= parse_url($url, PHP_URL_QUERY) ? '&confirmLogout=1': '?confirmLogout=1';
             
             //Redirect the the user to his previous url if it was specified.
-            $this->redirect($url);
+            return $this->redirect($url);
         }
     
         throw new \yii\web\MethodNotAllowedHttpException(405);
